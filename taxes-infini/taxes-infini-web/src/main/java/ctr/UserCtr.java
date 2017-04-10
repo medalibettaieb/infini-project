@@ -10,8 +10,7 @@ import services.TaxesServicesLocal;
 public class UserCtr {
 	@EJB
 	private TaxesServicesLocal taxesServicesLocal;
-
-	private Agent agent;
+	private Agent agent = new Agent();
 
 	public void doSaveOrUpdateAgent() {
 		taxesServicesLocal.saveOrUpdateUser(agent);
